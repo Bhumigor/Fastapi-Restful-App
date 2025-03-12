@@ -2,10 +2,11 @@ import pandas as pd
 
 # Sample data
 data = [
-    {"id": 1, "name": "John Doe", "email": "john.doe@example.com", "password": "pass123"},
-    {"id": 2, "name": "Jane Smith", "email": "jane.smith@example.com", "password": "secure456"},
-    {"id": 3, "name": "Alice Brown", "email": "alice.brown@example.com", "password": "alice789"},
-    {"id": 4, "name": "Bob White", "email": "bob.white@example.com", "password": "bobpass321"}
+    {"id": 1, "name": "Alice", "email": "alice@example.com", "password": "Password@123"},
+    {"id": 2, "name": "Bob", "email": "bob@example.com", "password": "Password@123"},
+    {"id": 3, "name": "Charlie", "email": "charlie@example.com", "password": "Password@123"},
+    {"id": 4, "name": "David", "email": "david@example.com", "password": "Password@123"},
+    {"id": 5, "name": "Eve", "email": "eve@gmail.com", "password": "Password@123"},
 ]
 
 # Create and save CSV

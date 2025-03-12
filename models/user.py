@@ -1,10 +1,10 @@
-from sqlalchemy import Table,Column,Integer,String
-from config.db import meta
+from sqlalchemy import Column,Integer,String
+from config.db import Base
 
-users = Table(
-    'users',meta,
-    Column('id',Integer,primary_key=True),
-    Column('name',String(255)),
-    Column('email',String(255)),
-    Column('password',String(255))
-)
+class User(Base):
+    __tablename__ = "users"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String(255), nullable=False)
+    email = Column(String(255), unique=True, nullable=False)
+    password = Column(String(255), nullable=False)

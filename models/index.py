@@ -1,7 +1,5 @@
-from sqlalchemy import MetaData
-from models.user import users
-from config.db import meta, engine
+from models.user import User
+from config.db import Base, engine
 
-meta = MetaData()
+Base.metadata.create_all(bind=engine)
 
-meta.create_all(engine)
